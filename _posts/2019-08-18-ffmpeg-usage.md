@@ -72,4 +72,36 @@ file '/path/to/file/2.ts'
 file '/path/to/file/3.ts'
 {% endhighlight %}
 
+Taken from https://trac.ffmpeg.org/wiki/Concatenate
 
+
+Sometimes there are audio sync issues when we merge video files of different audio rate.
+This can be seen quite significantly if we open the merged video in a browser rather than a video player like vlc
+which automatically resolves audio sync issues.
+
+To properly merge video clips, we have to make sure all video files have same audio rate.
+For that first we can see what is the audio rate and set that audio rate.
+
+5. Get Audio Rate
+
+{% highlight sh linenos %}
+ffprobe -v error -select_streams a:0 -show_entries stream=sample_rate -of default=noprint_wrappers=1:nokey=1 source_video.mp4
+{% endhighlight %}
+
+6. Set Audio rate
+
+{% highlight sh linenos %}
+ffmpeg -i source_video.mp4 -ar sample_rate output_video.mp4
+{% endhighlight %}
+
+
+Sometime we wish to get thumbnail of a video. We can do that by
+
+{% highlight sh linenos %}
+ffmpeg -i source_video.mp4 -vf thumbnail,scale=640:360 -frames:v 1 thumbnail.png
+{% endhighlight %}
+
+
+
+
+For each of the above commands we can add -y parameter before output_video.mp4 to overwrite file if already exists.

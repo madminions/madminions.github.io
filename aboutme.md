@@ -1,16 +1,30 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Madhudeep Petwal.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I did my Btech from College of Technology Pantnagar and Mtech from IIIT Hyderabad.
+I am currently in Infosys, Bangalore as a software developer.
 
-What else do you need?
+I am interested in Computer Vision.
 
-### my history
+[linkedin](https://www.linkedin.com/in/madhudeep-petwal)
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Projects
+
+1. Worked with Tennis Australia in Melbourne HQ for Australian Open 2019. 
+Create Infosys Highlights clips which were shared by tennis australia media team across social media
+[AusOpen](https://ausopen.com/watch#tab=infosys%20ai%20clips)
+
+2. Worked on Players Portal which were used by Players and Coaches during Roland Garros 2019.
+	Worked with Roland Garros tech team in Paris during French Open.
+
+3. Contributed to Hive Open Source
+
+	Small contribution to HIVE open source.
+	Enhanced HIVE grammar to include SHOW COLUMNS LIKE "regex"
+	This will help to get only desired columns.
+
+	[link](https://issues.apache.org/jira/browse/HIVE-18373)
