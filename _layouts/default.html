@@ -1,29 +1,9 @@
 ---
-layout: compress
+layout: base
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<div class="intro-header"></div>
 
-    {% if page.title != 'index' %}
-        {% include head.html %}
-    {% else %}
-        {% include index_head.html %}
-    {% endif %}
-
-<body id="page-top" class="landing-page">
-
-    {% if page.title != 'index' %}
-        {% include blog_header.html %}
-    {% endif %}
-
-    {{ content }}
-
-    {% if page.title != 'index' %}
-        {% include foot.html %}
-    {% else %}
-        {% include index_foot.html %}
-    {% endif %}
-
-</body>
-</html>
+<div role="main" class="container">
+  {{ content }}
+</div>
