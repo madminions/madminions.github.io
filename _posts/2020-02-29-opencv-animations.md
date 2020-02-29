@@ -1,6 +1,7 @@
 ---
 layout: post
 title: OpenCv Animations
+image: /img/opencv.png
 published: true
 ---
 
